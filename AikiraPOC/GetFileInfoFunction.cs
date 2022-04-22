@@ -57,7 +57,7 @@ namespace AikiraPOC
             {
                 dynamic jsonToReturn = null;
                 string strMsg = ex.Message.ToString();
-                jsonToReturn = JsonConvert.SerializeObject(strMsg);
+                jsonToReturn = JsonConvert.SerializeObject("Error"+strMsg);
                 return new OkObjectResult(jsonToReturn);
             }
            
