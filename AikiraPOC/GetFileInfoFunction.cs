@@ -29,7 +29,7 @@ namespace AikiraPOC
         {
             try
             {
-                log.LogInformation("AiKira GetFileInfo function processed a request.");
+                log.LogInformation("AiKira GetFileInfo processed a request.");
                 string PSId = req.Query["PSId"];
                 string ProjectId = req.Query["ProjectId"];
                 string BatchId = req.Query["BatchId"];
